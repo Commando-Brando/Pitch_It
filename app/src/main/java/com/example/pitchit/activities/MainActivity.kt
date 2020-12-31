@@ -1,10 +1,11 @@
-package com.example.pitchit
+package com.example.pitchit.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.example.pitchit.R
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 
 class MainActivity : AppCompatActivity() {
