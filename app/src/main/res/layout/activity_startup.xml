@@ -11,23 +11,21 @@
         android:id="@+id/imageView"
         android:layout_width="@dimen/startup_logo_width"
         android:layout_height="@dimen/startup_logo_height"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_idea"
-        android:layout_margin="@dimen/startup_logo_margin"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/startup_logo_margin"
+        app:srcCompat="@drawable/ic_idea" />
 
     <Button
         android:layout_width="@dimen/standard_width"
         android:layout_height="@dimen/standard_height"
         android:text="@string/startup_button_login"
+        style="@style/StandardButton"
         android:onClick="onLogin"/>
 
     <Button
         android:layout_width="@dimen/standard_width"
         android:layout_height="@dimen/standard_height"
         android:text="@string/startup_button_signup"
-        android:onClick="onSignup"/>
+        android:onClick="onSignup"
+        style="@style/StandardButton"/>
 </LinearLayout>
