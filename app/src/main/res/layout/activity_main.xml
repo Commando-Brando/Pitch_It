@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    tools:context=".activities.PitchActivity">
 
-    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/frame"
-        app:rotation_degrees="15.5"/>
+        android:layout_height="@dimen/navigation_height"
+        android:background="@drawable/navigation_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicator="@null"
+        app:tabMinWidth="@dimen/navigation_height"
+        app:tabRippleColor="@null">
 
+    </com.google.android.material.tabs.TabLayout>
+
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

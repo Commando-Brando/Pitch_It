@@ -11,4 +11,5 @@
     <color name="blue">#2196F3</color>
     <color name="green">#4CAF50</color>
     <color name="accent_color">#7C4DFF</color>
+    <color name="shadow">#cadddddd</color>
 </resources>
