@@ -7,16 +7,21 @@
     tools:context=".activities.PitchActivity">
 
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/navigationTabs"
         android:layout_width="match_parent"
         android:layout_height="@dimen/navigation_height"
         android:background="@drawable/navigation_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:tabIndicator="@null"
         app:tabMinWidth="@dimen/navigation_height"
-        app:tabRippleColor="@null">
+        app:tabRippleColor="@null"/>
 
-    </com.google.android.material.tabs.TabLayout>
-
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/navigationTabs"
+        app:layout_constraintTop_toTopOf="parent" />
     
 </androidx.constraintlayout.widget.ConstraintLayout>
